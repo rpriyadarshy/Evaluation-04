@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Red Tape</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+  </head>
+  <body>
+    <div class="min-h-screen">
+      <div class="container px-52 py-4">
+        <div class="flex justify-between">
+          <img
+            src="https://www.redtape.com/cdn/shop/files/logo.png?v=1704870276&width=600"
+          />
+
+          <div>
+            <input
+              type="search"
+              class="px-4 py-1 text-gray-800 rounded-full focus:outline-none border-b-2 border-black-600"
+              placeholder="search"
+              x-model="search"
+            />
+          </div>
+        </div>
+        <div class="flex justify-between py-6">
+          <div class="flex gap-4">
+            <div>Men</div>
+            <div>Women</div>
+            <div>Kids</div>
+            <div>Accessories</div>
+            <div>Gifting</div>
+            <div>Soda Water X RedTape</div>
+          </div>
+          <div class="flex gap-3">
+            <div><i class="bi bi-person-fill"></i> Login</div>
+            <div><i class="bi bi-bag-fill"></i> Cart</div>
+            <div><i class="bi bi-bookmark-heart-fill"></i> Wishlist</div>
+          </div>
+        </div>
+      </div>
+      <div class="border border-gray-100"></div>
+      <div class="container px-52 py-12">
+        <div class="max-w-full mx-auto bg-white">
+          <h2 class="text-2xl font-bold mb-4">Register Account</h2>
+          <p class="mb-6">
+            If you already have an account with us, please login at the login
+            page.
+          </p>
+          <form>
+            <div class="mb-4">
+              <div class="flex justify-between gap-8">
+                <div class="w-full">
+                  <label for="first-name" class="block text-gray-700"
+                    >First Name</label
+                  >
+                  <input
+                    type="text"
+                    id="first-name"
+                    class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-blue-500"
+                    placeholder="First name"
+                    required
+                  />
+                </div>
+                <div class="w-full">
+                  <label for="last-name" class="block text-gray-700"
+                    >Last Name</label
+                  >
+                  <input
+                    type="text"
+                    id="last-name"
+                    class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-blue-500"
+                    placeholder="Last name"
+                    required
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="mb-4">
+              <div class="flex justify-between gap-8">
+                <div class="w-full">
+                  <label for="email" class="block text-gray-700">Email</label>
+                  <input
+                    type="email"
+                    id="email"
+                    class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-blue-500"
+                    placeholder="Email"
+                    required
+                  />
+                </div>
+                <div class="w-full">
+                  <label for="telephone" class="block text-gray-700"
+                    >Telephone</label
+                  >
+                  <input
+                    type="tel"
+                    id="telephone"
+                    class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-blue-500"
+                    placeholder="Telephone"
+                    required
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="mb-4">
+              <div class="flex justify-between gap-8">
+                <div class="w-full">
+                  <label for="password" class="block text-gray-700"
+                    >Password</label
+                  >
+                  <input
+                    type="password"
+                    id="password"
+                    class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-blue-500"
+                    placeholder="Password"
+                    required
+                  />
+                </div>
+                <div class="w-full">
+                  <label for="password-confirm" class="block text-gray-700"
+                    >Password Confirm</label
+                  >
+                  <input
+                    type="password"
+                    id="password-confirm"
+                    class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-blue-500"
+                    placeholder="Password Confirm"
+                    required
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-8">
+              <h1 class="text-3xl font-bold">Newsletter</h1>
+              <div class="mt-4 flex items-center">
+                <h2 class="text-xl font-bold">Subscribe</h2>
+                <div class="ml-4 flex items-center">
+                  <input type="radio" name="subscribe" id="yes" value="yes" />
+                  <label for="yes" class="ml-2">Yes</label>
+                </div>
+                <div class="ml-4 flex items-center">
+                  <input type="radio" name="subscribe" id="no" value="no" />
+                  <label for="no" class="ml-2">No</label>
+                </div>
+              </div>
+              <div class="flex w-full justify-end">
+                <div class="flex items-center gap-2">
+                  <p>
+                    I have read and agree to the
+                    <a href="#" class="underline">Privacy Policy</a>
+                    <input
+                      type="checkbox"
+                      id="privacy-policy"
+                      name="privacy-policy"
+                      value="yes"
+                    />
+                  </p>
+                  <button
+                    type="submit"
+                    class="bg-black text-white py-2 px-4 rounded-md"
+                  >
+                    Create
+                  </button>
+                </div>
+              </div>
+              <div class="mt-8 flex justify-center">
+                <a
+                  href="#"
+                  class="bg-blue-500 text-white py-2 px-4 rounded-md mr-4"
+                  >f</a
+                >
+                <a href="#" class="bg-red-500 text-white py-2 px-4 rounded-md"
+                  >G</a
+                >
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="border border-gray-100"></div>
+      <div class="container pt-12">
+        <footer>
+          <div class="container mx-auto flex flex-col items-center gap-4">
+            <div class="flex gap-8">
+              <div>
+                <h3 class="text-gray-600 font-medium text-sm uppercase">
+                  What's in Store
+                </h3>
+                <ul class="mt-2 space-y-1">
+                  <li>
+                    <a href="#" class="text-sm text-gray-800 hover:text-red-500"
+                      >Men</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="text-sm text-gray-800 hover:text-red-500"
+                      >Women</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="text-sm text-gray-800 hover:text-red-500"
+                      >Kids</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="text-sm text-gray-800 hover:text-red-500"
+                      >Accessories</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="text-sm text-gray-800 hover:text-red-500"
+                      >Gifting</a
+                    >
+                  </li>
+                </ul>
+              </div>
+
+              <div>
+                <h3 class="text-gray-600 font-medium text-sm uppercase">
+                  About Company
+                </h3>
+                <ul class="mt-2 space-y-1">
+                  <li>
+                    <a href="#" class="text-sm text-gray-800 hover:text-red-500"
+                      >About Us</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="text-sm text-gray-800 hover:text-red-500"
+                      >News</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="text-sm text-gray-800 hover:text-red-500"
+                      >Careers</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="text-sm text-gray-800 hover:text-red-500"
+                      >Sustainability</a
+                    >
+                  </li>
+                </ul>
+              </div>
+
+              <div>
+                <h3 class="text-gray-600 font-medium text-sm uppercase">
+                  Customer Info
+                </h3>
+                <ul class="mt-2 space-y-1">
+                  <li>
+                    <a href="#" class="text-sm text-gray-800 hover:text-red-500"
+                      >Contact Us</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="text-sm text-gray-800 hover:text-red-500"
+                      >Feedback</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="text-sm text-gray-800 hover:text-red-500"
+                      >My Account</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="text-sm text-gray-800 hover:text-red-500"
+                      >Store Locator</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="text-sm text-gray-800 hover:text-red-500"
+                      >Store Expansion</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="text-sm text-gray-800 hover:text-red-500"
+                      >FAQS</a
+                    >
+                  </li>
+                </ul>
+              </div>
+
+              <div>
+                <h3 class="text-gray-600 font-medium text-sm uppercase">
+                  Policies
+                </h3>
+                <ul class="mt-2 space-y-1">
+                  <li>
+                    <a href="#" class="text-sm text-gray-800 hover:text-red-500"
+                      >Return & Replacing</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="text-sm text-gray-800 hover:text-red-500"
+                      >Privacy Policy</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="text-sm text-gray-800 hover:text-red-500"
+                      >Terms & Conditions</a
+                    >
+                  </li>
+                </ul>
+              </div>
+
+              <div>
+                <div class="flex items-center gap-8 pt-16">
+                  <img
+                    src="https://www.redtape.com/cdn/shop/files/rt.jpg?v=1707332114"
+                    alt="redtape logo"
+                    class="w-28"
+                  />
+
+                  <img
+                    src="https://www.redtape.com/cdn/shop/files/mb_2b859227-cde7-4265-9bb6-61e5ab54929d_100x.png?v=1707332108"
+                    alt="bond street logo"
+                    class="w-20"
+                  />
+                  <img
+                    src="https://www.redtape.com/cdn/shop/files/bsb_100x.png?v=1707332118"
+                    alt="bond street logo"
+                    class="w-16"
+                  />
+                </div>
+                <div class="flex gap-4 ml-48 py-8">
+                  <div class="border rounded-full p-1 px-2 border-black">
+                    <i class="bi bi-facebook"></i>
+                  </div>
+                  <div class="border rounded-full p-1 px-2 border-black">
+                    <i class="bi bi-twitter-x"></i>
+                  </div>
+                  <div class="border rounded-full p-1 px-2 border-black">
+                    <i class="bi bi-youtube"></i>
+                  </div>
+                  <div class="border rounded-full p-1 px-2 border-black">
+                    <i class="bi bi-instagram"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="flex gap-4 mt-4 items-center">
+              <h2>We Accept</h2>
+              <img
+                src="https://www.redtape.com/cdn/shop/files/cards_e268f93f-d692-4597-a825-6aa6f6cb60ca.png?v=1705553886"
+                alt="mastercard logo"
+              />
+            </div>
+          </div>
+          <div>
+            <p class="text-white text-sm bg-black py-2 px-52">
+              © Redtape2024. All Rights Reserved.
+            </p>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
